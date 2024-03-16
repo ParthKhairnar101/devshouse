@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "564027917815",
+    "project_id": "finexus-f44cb",
+    "storage_bucket": "finexus-f44cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564027917815:android:feb491e494321805411af2",
+        "android_client_info": {
+          "package_name": "com.example.finexus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564027917815-8tniio9tgch6gefrdh8g1g93h9fp32q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJFMDPJf6gU6VUHwAVMVgCq7WoLUvTaro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564027917815-8tniio9tgch6gefrdh8g1g93h9fp32q9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "564027917815-0vrjhkj53g2hl5l0vqpdgjdv2sgq77jp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.finexus.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
