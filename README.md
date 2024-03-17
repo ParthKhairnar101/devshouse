@@ -14,6 +14,6 @@ npx hardhat
 npx hardhat compile
 npx hardhat test
 npx hardhat node
-npx hardhat run scripts/sample-scripts.js --network Mumbai
+npx hardhat run scripts/sample-scripts.js --network mumbai
 npx hardhat help
 ```
