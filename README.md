@@ -1,4 +1,4 @@
-# Distributed Ledger System
+# FiNexus - Distributed Ledger System
 
 ## Overview
 The Distributed Ledger System is a decentralized application (DApp) that allows users to manage transactions, create smart contracts, and securely store data using blockchain technology. This project includes a website and an Android app for accessing and interacting with the system.
