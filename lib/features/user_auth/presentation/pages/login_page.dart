@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:finexus/features/user_auth/presentation/pages/sign_up_page.dart';
-import 'package:finexus/features/user_auth/presentation/widgets/form_container_widget.dart';
-import 'package:finexus/global/common/toast.dart';
+import 'sign_up_page.dart';
+import '../widgets/form_container_widget.dart';
+import '../../../../global/common/toast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';

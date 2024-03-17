@@ -94,7 +94,6 @@ class _PaymentsPageState extends State<PaymentsPage> {
                       );
                     },
                   ),
-                  // Add more payment method items as needed
                 ],
               ),
               SizedBox(height: 32),
@@ -119,7 +118,6 @@ class _PaymentsPageState extends State<PaymentsPage> {
                   ),
                 ],
               ),
-              // Add additional settings for frequency and duration if needed
             ],
           ),
         ),

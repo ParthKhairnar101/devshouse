@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../TransactionPage/trans.dart';
-import '../TransactionPage/transactionMain.dart';
 
 class HomePager extends StatelessWidget {
   @override

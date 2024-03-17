@@ -59,14 +59,13 @@ class TransPage extends StatelessWidget {
             children: [
               _buildSearchBar(),
               SizedBox(height: 16.0),
-              //_buildDivider(0.2, 8.5), // Add a divider with custom top and bottom padding
               _buildFilterRow(),
               _buildDivider(0.20, 1.0),
               Expanded(
                 child: Container(
                   child: TransactionList(transactions: transactions),
                 ),
-              ),// Add another divider with custom top and bottom padding
+              ),
             ],
           ),
         ),
@@ -79,20 +78,20 @@ class TransPage extends StatelessWidget {
       width: 600,
       padding: EdgeInsets.symmetric(horizontal: 16.0),
       child: TextField(
-        style: TextStyle(color: Colors.white), // Change text color
+        style: TextStyle(color: Colors.white),
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.search, color: Colors.white), // Change icon color
+          prefixIcon: Icon(Icons.search, color: Colors.white),
           hintText: 'Search',
-          hintStyle: TextStyle(color: Colors.white.withOpacity(0.5)), // Change hint text color
-          filled: true, // Fill the background
-          fillColor: Colors.grey.withOpacity(0.5), // Change background color
+          hintStyle: TextStyle(color: Colors.white.withOpacity(0.5)),
+          filled: true,
+          fillColor: Colors.grey.withOpacity(0.5),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20.0),
-            borderSide: BorderSide.none, // Remove border
+            borderSide: BorderSide.none,
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20.0),
-            borderSide: BorderSide.none, // Remove border when focused
+            borderSide: BorderSide.none,
           ),
         ),
       ),
@@ -103,11 +102,11 @@ class TransPage extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(top: topPadding, bottom: bottomPadding),
       child: Divider(
-        height: 2, // Adjust the height of the divider line
-        color: Colors.grey, // Change the color of the divider line
-        thickness: 2, // Adjust the thickness of the divider line
-        indent: 0, // Set indent to 0 to extend the divider line to full width
-        endIndent: 0, // Set endIndent to 0 to extend the divider line to full width
+        height: 2,
+        color: Colors.grey,
+        thickness: 2,
+        indent: 0,
+        endIndent: 0,
       ),
     );
   }
@@ -120,8 +119,8 @@ class TransPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: 100, // Set the desired width here
-            height: 35, // Set the desired height here
+            width: 100,
+            height: 35,
             child: DropdownButton<String>(
               items: <String>['Item 1', 'Item 2', 'Item 3'].map((String value) {
                 return DropdownMenuItem<String>(
@@ -137,7 +136,7 @@ class TransPage extends StatelessWidget {
               },
             ),
           ),
-          SizedBox(width: 8), // Add some spacing between the dropdown and filter buttons
+          SizedBox(width: 8),
           _buildFilterButtons(),
         ],
       ),
@@ -149,13 +148,13 @@ class TransPage extends StatelessWidget {
     return Row(
       children: [
         _buildFilterButton('Filter 1'),
-        SizedBox(width: 8), // Add spacing between filter buttons
+        SizedBox(width: 8),
         _buildFilterButton('Filter 2'),
-        SizedBox(width: 8), // Add spacing between filter buttons
+        SizedBox(width: 8),
         _buildFilterButton('Filter 3'),
-        SizedBox(width: 8), // Add spacing between filter buttons
+        SizedBox(width: 8),
         _buildFilterButton('Filter 4'),
-        SizedBox(width: 8), // Add spacing between filter buttons
+        SizedBox(width: 8),
       ],
     );
   }
@@ -177,7 +176,7 @@ class TransPage extends StatelessWidget {
           text,
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Colors.white, // Change text color
+            color: Colors.white,
           ),
         ),
       ),
@@ -211,10 +210,10 @@ class _CustomUnderlinePainter extends BoxPainter {
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
     assert(configuration.size != null);
     final Rect rect = offset & configuration.size!;
-    final Paint paint = Paint(); // Create a new Paint object
-    paint.color = Colors.white; // Set the color to white
-    paint.strokeWidth = decoration.borderSide.width; // Set stroke width
-    paint.style = PaintingStyle.stroke; // Set painting style to stroke
+    final Paint paint = Paint();
+    paint.color = Colors.white;
+    paint.strokeWidth = decoration.borderSide.width;
+    paint.style = PaintingStyle.stroke;
 
     final double center = rect.center.dx;
 
@@ -228,20 +227,3 @@ class _CustomUnderlinePainter extends BoxPainter {
   }
 }
 
-
-// void main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Tabbed App Example',
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//       ),
-//       home: HomePage(),
-//     );
-//   }
-// }

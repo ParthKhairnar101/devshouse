@@ -36,17 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
               'assets/logo1.png',
               width: 400,
               height: 400,
-            ), // Add spacing between logo and text
-            // Text(
-            //   "FiNexus",
-            //   textAlign: TextAlign.center,
-            //   style: TextStyle(
-            //     color: Colors.white, // White text color for contrast
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 46,
-            //     fontFamily: 'AbrilFatface', // Using Google font 'AbrilFatface'
-            //   ),
-            // ),
+            ),
           ],
         ),
       ),
